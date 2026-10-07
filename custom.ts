@@ -14,8 +14,6 @@ namespace miSiguelineas {
     //% velocidad.defl=50
     //% velocidad.min=10 velocidad.max=255
     export function iniciar(velocidad: number): void {
-        maqueenPlusV2.I2CInit();
-        basic.pause(1000);
         ejecutando = true;
 
         control.inBackground(function () {
